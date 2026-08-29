@@ -1201,5 +1201,4 @@ with performance_tab:
 st.markdown("---")
 
 st.caption(
-    "ChurnGuard • Logistic Regression • Customer Churn Prediction"
-)
+    "ChurnGuard • Logistic Regression • Customer Churn Prediction")
