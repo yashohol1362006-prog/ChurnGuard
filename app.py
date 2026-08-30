@@ -419,7 +419,6 @@ with prediction_tab:
             ["No", "Yes", "No phone service"]
         )
 
-
     with col3:
 
         contract = st.selectbox(
