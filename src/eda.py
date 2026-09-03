@@ -394,7 +394,7 @@ import joblib
 joblib.dump(model, "models/logistic_regression_model.pkl")
 joblib.dump(scaler, "models/scaler.pkl")
 joblib.dump(feature_names, "models/model_columns.pkl")
-
+ 
 
 
 
