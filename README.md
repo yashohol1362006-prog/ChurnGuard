@@ -245,7 +245,7 @@ The application then produces:
 ```text
 Customer Information
         ↓
-Preprocessing
+Preprocessing 
         ↓
 Logistic Regression
         ↓
