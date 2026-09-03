@@ -4,23 +4,23 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 
 df= pd.read_csv(r"C:\Users\Yash Ohol\OneDrive\ChurnGuard\data\WA_Fn-UseC_-Telco-Customer-Churn.csv")
-# print(df)
+print(df)
 
 # # Checking top 10 rows
-# print('\nFirst 10 Rows from Dataset are : ')
-# print(f'{df.head(10)}')
+print('\nFirst 10 Rows from Dataset are : ')
+print(f'{df.head(10)}')
 
 
-# print(f'\nShape of the Dataset is : ')
-# print(f'{df.shape}')
+print(f'\nShape of the Dataset is : ')
+print(f'{df.shape}')
 
 # # Information of the dataset
-# print(f'\nThe information about dataset is :')
-# print(f'{df.info()}')
+print(f'\nThe information about dataset is :')
+print(f'{df.info()}')
 
 # # Statistics of dataset
-# print(f'\nThe statistical of Dataset is :')
-# print(df.describe())
+print(f'\nThe statistical of Dataset is :')
+print(df.describe())
 
 
 # # Checking how many are No and Yes 
