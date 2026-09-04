@@ -8,7 +8,7 @@ model_columns = joblib.load("models/model_columns.pkl")
 print("Model loaded successfully!")
 print("Number of features:", len(model_columns))
 print(model_columns)
-
+ 
 
 import streamlit as st
 import pandas as pd
