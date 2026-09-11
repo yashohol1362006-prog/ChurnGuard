@@ -6,7 +6,7 @@ ChurnGuard is an interactive machine learning web application that predicts whet
 
 The project uses Logistic Regression for binary classification and provides churn probability, customer risk assessment, prediction explanations, and model performance analysis.
 
----
+--- 
 
 ## 🚀 Features
 
