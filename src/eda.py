@@ -6,7 +6,7 @@ import seaborn as sns
 df= pd.read_csv(r"C:\Users\Yash Ohol\OneDrive\ChurnGuard\data\WA_Fn-UseC_-Telco-Customer-Churn.csv")
 print(df)
 
-# # Checking top 10 rows
+# # Checking top 10 rows 
 print('\nFirst 10 Rows from Dataset are : ')
 print(f'{df.head(10)}')
 
