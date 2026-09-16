@@ -145,7 +145,7 @@ y_prob = model.predict_proba(X_scaled)[:, 1]
 # MODEL METRICS
 # ============================================================
 
-accuracy = accuracy_score(y, y_pred)
+accuracy = accuracy_score(y_test, y_pred)
 
 precision = precision_score(
     y,
