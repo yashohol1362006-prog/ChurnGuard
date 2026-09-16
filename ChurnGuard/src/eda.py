@@ -4,41 +4,41 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
  
 df= pd.read_csv(r"C:\Users\Yash Ohol\OneDrive\ChurnGuard\data\WA_Fn-UseC_-Telco-Customer-Churn.csv")
-# print(df)
+print(df)
 
-# # Checking top 10 rows
-# print('\nFirst 10 Rows from Dataset are : ')
-# print(f'{df.head(10)}')
-
-
-# print(f'\nShape of the Dataset is : ')
-# print(f'{df.shape}')
-
-# # Information of the dataset
-# print(f'\nThe information about dataset is :')
-# print(f'{df.info()}')
-
-# # Statistics of dataset
-# print(f'\nThe statistical of Dataset is :')
-# print(df.describe())
+# Checking top 10 rows
+print('\nFirst 10 Rows from Dataset are : ')
+print(f'{df.head(10)}')
 
 
-# # Checking how many are No and Yes 
-# print('\nChurn Counts : ')
-# print(df['Churn'].value_counts())
+print(f'\nShape of the Dataset is : ')
+print(f'{df.shape}')
 
-# # Checking Percentage of yes and no 
-# print('\nChurn Percentage : ')
-# print(df['Churn'].value_counts(normalize=True)*100) 
+# Information of the dataset
+print(f'\nThe information about dataset is :')
+print(f'{df.info()}')
+
+# Statistics of dataset
+print(f'\nThe statistical of Dataset is :')
+print(df.describe())
 
 
-# # checking Churn category on graph (how ,any people are leaving and staying on app )
-# sns.countplot(x= 'Churn', data= df)
-# plt.title('Customer Churn Distribution')
-# plt.xlabel('Churn')
-# plt.ylabel('Number of customer')
+# Checking how many are No and Yes 
+print('\nChurn Counts : ')
+print(df['Churn'].value_counts())
 
-# plt.show()
+# Checking Percentage of yes and no 
+print('\nChurn Percentage : ')
+print(df['Churn'].value_counts(normalize=True)*100) 
+
+
+# checking Churn category on graph (how ,any people are leaving and staying on app )
+sns.countplot(x= 'Churn', data= df)
+plt.title('Customer Churn Distribution')
+plt.xlabel('Churn')
+plt.ylabel('Number of customer')
+
+plt.show()
 
 
 # Checking if Dupliacte Values aare present or not 
@@ -55,35 +55,35 @@ print(pd.crosstab(df['Contract'], df['Churn']))
 
 
 # we are checking if "Is there a relationship between the type of contract 
-# a customer has and whether they churn?"
-# sns.countplot(x= 'Contract', hue= 'Churn', data= df)
-# plt.title('Churn by Contract Type')
-# plt.xlabel('Contract by Types')
-# plt.ylabel('Number of Customers')
+a customer has and whether they churn?"
+sns.countplot(x= 'Contract', hue= 'Churn', data= df)
+plt.title('Churn by Contract Type')
+plt.xlabel('Contract by Types')
+plt.ylabel('Number of Customers')
 
-# plt.show()
+plt.show()
 
-# # Checking Relationship with Churn to tenure
+# Checking Relationship with Churn to tenure
 print('\nTenure staticstics :')
 print(df.groupby('Churn')['tenure'].mean())
 
-# sns.boxplot(x= 'Churn', y= 'tenure', data= df)
-# plt.title('Tenure vs Churn')
-# plt.xlabel('Churn')
-# plt.ylabel('Tenure (Months)')
+sns.boxplot(x= 'Churn', y= 'tenure', data= df)
+plt.title('Tenure vs Churn')
+plt.xlabel('Churn')
+plt.ylabel('Tenure (Months)')
 
-# plt.show()
+plt.show()
 
 print('\nMonthly Charges by Churn :')
 print(df.groupby('Churn')['MonthlyCharges'].describe())
 
 
-# sns.boxplot(x= 'Churn', y = 'MonthlyCharges', data= df)
-# plt.title('Monthly Charges VS Churn')
-# plt.xlabel('Churn')
-# plt.ylabel('Monthly Charges')
+sns.boxplot(x= 'Churn', y = 'MonthlyCharges', data= df)
+plt.title('Monthly Charges VS Churn')
+plt.xlabel('Churn')
+plt.ylabel('Monthly Charges')
 
-# plt.show()
+plt.show()
 
 
 print('\nThe Internet Charges are ')
@@ -91,12 +91,12 @@ print(pd.crosstab(df['InternetService'],
                    df['Churn'], 
                    normalize='index')*100)
 
-# sns.countplot( x= 'InternetService',hue= 'Churn', data= df)
-# plt.title(' Churn VS Internet Servies')
-# plt.xlabel('Internet Service ')
-# plt.ylabel('No. of Customers')
+sns.countplot( x= 'InternetService',hue= 'Churn', data= df)
+plt.title(' Churn VS Internet Servies')
+plt.xlabel('Internet Service ')
+plt.ylabel('No. of Customers')
 
-# plt.show()
+plt.show()
 
 
 
@@ -105,12 +105,12 @@ print(pd.crosstab(df['TechSupport'],
                    df['Churn'],
                      normalize='index')*100)
 
-# sns.countplot(x='TechSupport', hue= 'Churn', data= df )
-# plt.title('Churn by Tech Support')
-# plt.xlabel('Tech Support ')
-# plt.ylabel('No. of Customers ')
+sns.countplot(x='TechSupport', hue= 'Churn', data= df )
+plt.title('Churn by Tech Support')
+plt.xlabel('Tech Support ')
+plt.ylabel('No. of Customers ')
 
-# plt.show()
+plt.show()
 
 
 
@@ -121,14 +121,14 @@ print(
                  normalize='index')*100
 )
 
-# sns.countplot(x ='OnlineSecurity', 
-#               hue= 'Churn', 
-#               data= df)
-# plt.title('Churn by Online Security ')
-# plt.xlabel('Online Security')
-# plt.ylabel('Number of Customers')
+sns.countplot(x ='OnlineSecurity', 
+              hue= 'Churn', 
+              data= df)
+plt.title('Churn by Online Security ')
+plt.xlabel('Online Security')
+plt.ylabel('Number of Customers')
 
-# plt.show()
+plt.show()
 
 
 print('\n Churn Rate by Payments method :')
@@ -137,12 +137,12 @@ print(pd.crosstab(df['PaymentMethod'],
                    normalize='index')*100
                    )
 
-# sns.countplot(x= 'PaymentMethod', hue= 'Churn', data= df)
-# plt.title('Churn by Payment Methods ')
-# plt.xlabel('Payment Methods ')
-# plt.xticks(rotation= 30)
+sns.countplot(x= 'PaymentMethod', hue= 'Churn', data= df)
+plt.title('Churn by Payment Methods ')
+plt.xlabel('Payment Methods ')
+plt.xticks(rotation= 30)
 
-# plt.show()
+plt.show()
 
 print('\nChurn Rate by Senior Citizen :')
 print(
@@ -153,18 +153,17 @@ print(
     ) * 100
 )
 
-# sns.countplot(x= 'SeniorCitizen',
-#               hue= 'Churn',
-#               data= df)
-# plt.title('Churn by Senior Citizen Statue ')
-# plt.xlabel('Senior Citizen (0= no , 1 = yes)')
-# plt.ylabel('Number of Customers :  ')
+sns.countplot(x= 'SeniorCitizen',
+              hue= 'Churn',
+              data= df)
+plt.title('Churn by Senior Citizen Statue ')
+plt.xlabel('Senior Citizen (0= no , 1 = yes)')
+plt.ylabel('Number of Customers :  ')
 
-# plt.show()
+plt.show()
 
 
-# print(df[["tenure", "MonthlyCharges", "TotalCharges"]].corr())
-
+print(df[["tenure", "MonthlyCharges", "TotalCharges"]].corr())
 # Here we Faced Error cuz one out of three feature was containing
 # string value as '  '  which was giving error while we were making correlation matrix 
 
