@@ -22,7 +22,7 @@ The project uses Logistic Regression for binary classification and provides chur
 - 🎯 Confusion Matrix
 - 📋 Accuracy, Precision, Recall and F1 Score
 - 📊 Feature influence analysis
-- 🌐 Interactive Streamlit web application
+- 🌐 Interactive Streamlit web application 
 
 ---
 
