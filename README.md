@@ -1,5 +1,5 @@
 # 🛡️ ChurnGuard
-
+ 
 ## Customer Churn Prediction using Machine Learning
 
 ChurnGuard is an interactive machine learning web application that predicts whether a telecom customer is likely to churn based on customer demographics, services, contract details, tenure, and billing information.
