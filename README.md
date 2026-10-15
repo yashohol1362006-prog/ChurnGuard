@@ -23,7 +23,7 @@ The project uses Logistic Regression for binary classification and provides chur
 - 📋 Accuracy, Precision, Recall and F1 Score
 - 📊 Feature influence analysis
 - 🌐 Interactive Streamlit web application 
- 
+  
 ---
 
 ## 🧠 Machine Learning Workflow
