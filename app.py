@@ -1,4 +1,4 @@
-import pandas as pd 
+import pandas as pd  
 import joblib
 
 model = joblib.load("models/logistic_regression_model.pkl")
