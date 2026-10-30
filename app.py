@@ -72,7 +72,7 @@ df["TotalCharges"] = pd.to_numeric(
     df["TotalCharges"],
     errors="coerce"
 )
-
+ 
 df = df.dropna()
 
 
