@@ -8,7 +8,7 @@ The project uses Logistic Regression for binary classification and provides chur
 
 --- 
 
-## 🚀 Features
+## 🚀 Features 
 
 - 🔮 Customer churn prediction
 - 📊 Churn probability and stay probability
